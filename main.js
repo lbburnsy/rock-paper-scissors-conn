@@ -37,3 +37,29 @@ function lose(playerChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     resultText.innerHTML = `${convertToWord(computerChoice)} beats ${convertToWord(playerChoice)}.<br>Computer wins a point.`
 }
+
+function game(playerChoice) {
+    let computerChoice = getComputerChoice();
+    switch (playerChoice + computerChoice) {
+        case "rs":
+        case "pr":
+        case "sp":
+            win(playerChoice, computerChoice);
+            break;
+        case "rp":
+        case "ps":
+        case "sr":
+            lose(playerChoice, computerChoice);
+            break;
+    }
+}
+
+function play() {
+    rock.addEventListener('click', () => game('r'));
+
+    paper.addEventListener('click', () => game('p'));
+
+    scissor.addEventListener('click', () => game('s'));
+}
+
+play();

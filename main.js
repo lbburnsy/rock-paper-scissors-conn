@@ -12,3 +12,11 @@ function getComputerChoice() {
     let randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
+
+function convertToWord(letter) {
+    if (letter == 'r') return 'rock';
+    if (letter == 'p') return 'paper';
+    if (letter == 's') return 'scissors';
+}
+
+console.log(convertToWord(getComputerChoice()))

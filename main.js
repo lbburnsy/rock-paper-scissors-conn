@@ -7,6 +7,8 @@ let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissor = document.getElementById('scissor');
 
+let resultText = document.getElementById('result-text')
+
 let playerScore = 0;
 let computerScore = 0;
 
@@ -22,3 +24,9 @@ function convertToWord(letter) {
     if (letter == 's') return 'scissors';
 }
 
+function win(playerChoice, computerChoice) {
+    playerScore++;
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    resultText.innerHTML = `${convertToWord(playerChoice)} beats ${convertToWord(computerChoice)}.<br>Player wins a point.`
+}

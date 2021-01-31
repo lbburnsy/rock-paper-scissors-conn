@@ -30,3 +30,10 @@ function win(playerChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     resultText.innerHTML = `${convertToWord(playerChoice)} beats ${convertToWord(computerChoice)}.<br>Player wins a point.`
 }
+
+function lose(playerChoice, computerChoice) {
+    computerScore++;
+    playerScore_span.innerHTML = playerScore;
+    computerScore_span.innerHTML = computerScore;
+    resultText.innerHTML = `${convertToWord(computerChoice)} beats ${convertToWord(playerChoice)}.<br>Computer wins a point.`
+}

@@ -14,11 +14,27 @@ header {
 main {
     background-color: #a7dadc;
     padding: 50px 0px;
-    width: 500px!important;
+    width: 50%!important;
     color: #1d3557;
 }
 
 .border-right {
     padding: 20px 0px;
     border-right: solid 2px #1d3557;
+}
+
+.choices-row {
+    padding: 50px 0px;
+}
+
+i {
+    font-size: 6em;
+}
+
+#scissor {
+    transform: rotate(90deg);
+}
+
+#result-text {
+    font-size: 2em;
 }

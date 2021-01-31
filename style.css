@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@200;300;400;600&display=swap');
+
+body {
+    background-color: #f1faee;
+    font-family: 'Imbue', serif;
+}
+
+header {
+    padding: 20px 0px;
+    background-color: #457b9d;
+    color: #f1faee;
+}
+
+main {
+    background-color: #a7dadc;
+    padding: 50px 0px;
+    width: 500px!important;
+    color: #1d3557;
+}
+
+.border-right {
+    padding: 20px 0px;
+    border-right: solid 2px #1d3557;
+}

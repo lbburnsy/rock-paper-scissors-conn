@@ -23,6 +23,7 @@
    
     <header class="container-fluid text-center">
         <h1>Rock, Paper, Scissors</h1>
+        <h4>Best of 7</h4>
     </header>
 
     <main class="container">
@@ -41,15 +42,21 @@
             </div>
         </div>
         
-        <div class="row justify-content-evenly align-items-center">
+        <div class="choices-row row justify-content-evenly align-items-center">
             <div class="col-4 text-center">
-                <i class="far fa-hand-rock"></i>
+                <i id="rock" class="far fa-hand-rock"></i>
             </div>
             <div class="col-4 text-center">
-                <i class="far fa-hand-paper"></i>
+                <i id="paper" class="far fa-hand-paper"></i>
             </div>
             <div class="col-4 text-center">
-                <i class="far fa-hand-scissors"></i>
+                <i id="scissor" class="far fa-hand-scissors"></i>
+            </div>
+        </div>
+
+        <div class="row results-row">
+            <div class="col text-center">
+                <p id="result-text">Rock beats scissors, +1 player</p>
             </div>
         </div>
     </main>

@@ -1,11 +1,14 @@
 // Query the DOM
 
-let playerScore = document.getElementById('player-score');
-let computerScore = document.getElementById('computer-score');
+let playerScore_span = document.getElementById('player-score');
+let computerScore_span = document.getElementById('computer-score');
 
 let rock = document.getElementById('rock');
 let paper = document.getElementById('paper');
 let scissor = document.getElementById('scissor');
+
+let playerScore = 0;
+let computerScore = 0;
 
 function getComputerChoice() {
     let choices = ['r', 's', 'p'];
@@ -19,4 +22,3 @@ function convertToWord(letter) {
     if (letter == 's') return 'scissors';
 }
 
-console.log(convertToWord(getComputerChoice()))
